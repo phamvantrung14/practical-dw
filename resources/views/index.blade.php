@@ -50,7 +50,22 @@
                 var _phone = $("#phone1").val();
                 var _f1 = $("#f1").val();
                 var _token = $("#token").val();
-                console.log(_name);
+                if (_name == ""){
+                    alert("Name not be blank");
+                    return false;
+                }
+                if (_email == ""){
+                    alert("Email not be blank");
+                    return false;
+                }
+                if (_phone == ""){
+                    alert("Phone not be blank");
+                    return false;
+                }
+                if (_f1 == ""){
+                    alert("Feedback not be blank");
+                    return false;
+                }
 
                 $.ajax({
                     url:"{{url("/add-info")}}",
