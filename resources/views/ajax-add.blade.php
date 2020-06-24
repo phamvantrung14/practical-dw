@@ -17,7 +17,7 @@
             @enderror
         </div>
         <div class="form-group">
-            <label for="">Student Phonenumber</label>
+            <label for="">Student Phonenumber1</label>
             <input type="number" name="student_telephone" required id="phone1" class="form-control @error("student_telephone") is-invalid  @enderror" placeholder="Enter Name" aria-describedby="helpId">
             @error("student_telephone")
             <span class="error invalid-feedback">{{$message}}</span>
@@ -31,6 +31,6 @@
             @enderror
         </div>
         <button type="button" onclick="addGetSt();" class="btn btn-primary">Submit</button>
-        <button type="submit"  class="btn btn-primary">Submit1</button>
+{{--        <button type="submit"  class="btn btn-primary">Submit1</button>--}}
     </form>
 </div>

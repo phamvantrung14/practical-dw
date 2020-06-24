@@ -50,6 +50,8 @@
                 var _phone = $("#phone1").val();
                 var _f1 = $("#f1").val();
                 var _token = $("#token").val();
+                console.log(_name);
+
                 $.ajax({
                     url:"{{url("/add-info")}}",
                     method:"POST",
